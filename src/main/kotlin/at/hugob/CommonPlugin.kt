@@ -19,6 +19,7 @@ class CommonPlugin : Plugin<Project> {
         project.repositories.mavenCentral()
 
         project.dependencies.add("compileOnly", "org.jetbrains:annotations:26.+")
+        project.dependencies.add("compileOnly", "at.hugob:annotations:+")
 
         project.extensions.configure<JavaPluginExtension> {
             toolchain {
